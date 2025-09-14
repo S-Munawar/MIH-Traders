@@ -20,17 +20,39 @@
 
   <!-- Navbar -->
   <header class="bg-green-900 text-white fixed w-full z-50 shadow-lg">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">MIH Traders</h1>
-      <nav class="space-x-6 hidden md:flex">
-        <a href="#home" class="hover:text-gray-300">Home</a>
-        <a href="#products" class="hover:text-gray-300">Products</a>
-        <a href="#about" class="hover:text-gray-300">About Us</a>
-        <a href="#location" class="hover:text-gray-300">Location</a>
-        <a href="#contact" class="hover:text-gray-300">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">MIH Traders</h1>
+
+    <!-- Hamburger button (visible on small screens) -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <!-- Icon (3 lines) -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="space-x-6 hidden md:flex">
+      <a href="#home" class="hover:text-gray-300">Home</a>
+      <a href="#products" class="hover:text-gray-300">Products</a>
+      <a href="#about" class="hover:text-gray-300">About Us</a>
+      <a href="#location" class="hover:text-gray-300">Location</a>
+      <a href="#contact" class="hover:text-gray-300">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-green-800 px-6 pb-4">
+    <a href="#home" class="block py-2 hover:text-gray-300">Home</a>
+    <a href="#products" class="block py-2 hover:text-gray-300">Products</a>
+    <a href="#about" class="block py-2 hover:text-gray-300">About Us</a>
+    <a href="#location" class="block py-2 hover:text-gray-300">Location</a>
+    <a href="#contact" class="block py-2 hover:text-gray-300">Contact</a>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section id="home" 
@@ -220,6 +242,12 @@
   </footer>
 
   <script>
+    const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
     AOS.init();
     feather.replace();
   </script>
