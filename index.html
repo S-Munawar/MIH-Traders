@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIH Traders - Office Furniture Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-green-900 text-white fixed w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">MIH Traders</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-gray-300">Home</a>
+        <a href="#products" class="hover:text-gray-300">Products</a>
+        <a href="#about" class="hover:text-gray-300">About Us</a>
+        <a href="#location" class="hover:text-gray-300">Location</a>
+        <a href="#contact" class="hover:text-gray-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" 
+    class="h-screen flex items-center justify-center text-center relative bg-fixed bg-cover bg-center" 
+    style="background-image: url('b497a530-3ee2-45d5-b258-5a54a2bf6299.png');">
+    
+    <!-- Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40"></div>
+
+    <div data-aos="fade-up" class="px-4 relative z-10">
+        <h1 class="text-4xl md:text-6xl font-bold text-black">MIH TRADERS</h1> 
+      <h3 class="text-4xl md:text-6xl font-bold text-black">
+        - Office Furniture Solutions
+      </h3>
+      <p class="mt-4 text-lg md:text-xl text-black">
+        Workstations • Tables • Chairs • Conference Furniture
+      </p>
+
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="#products" class="px-6 py-3 bg-white text-green-900 font-semibold rounded-lg shadow-lg hover:bg-gray-200">Our Products</a>
+        <a href="#contact" class="px-6 py-3 bg-green-700 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Products & Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Office Workstations -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden" data-aos="fade-up">
+          <img src="data:image/jpeg;base64,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" alt="Office Workstation" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Office Workstations</h3>
+            <p class="text-gray-600">Modern, space-saving workstations designed for teams and individuals to boost productivity.</p>
+          </div>
+        </div>
+
+        <!-- Office Tables -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden" data-aos="fade-up">
+          <img src="https://www.nilkamalfurniture.com/cdn/shop/files/RECARDOOFFICETABLE.jpg?v=1691381413&width=360" alt="Office Table" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Office Tables</h3>
+            <p class="text-gray-600">Durable, functional, and stylish office tables suitable for executives and staff.</p>
+          </div>
+        </div>
+
+        <!-- Conference Tables -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden" data-aos="fade-up">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlyrx1e0VBgvPismkYbVm-4MF0yWILdxF8A&s" alt="Conference Table" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Conference Tables</h3>
+            <p class="text-gray-600">Spacious, professional conference tables designed for meetings, discussions, and collaboration.</p>
+          </div>
+        </div>
+
+        <!-- Office Chairs & Related Furniture -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden" data-aos="fade-up">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLbeWssmsL13zv36d55KZNucXt5wnC1BL9A&s" alt="Office Chairs" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Office Chairs & Related Furniture</h3>
+            <p class="text-gray-600">Ergonomic chairs and supporting furniture for comfort and long working hours.</p>
+          </div>
+        </div>
+
+        <!-- Scrap Buying & Furniture Trade -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden sm:col-span-2 lg:col-span-3" data-aos="fade-up">
+          <img src="https://cdn2.hubspot.net/hubfs/597712/Depositphotos_112789866_m-2015.jpg" alt="Scrap Furniture" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Scrap Buying & Furniture Trade</h3>
+            <p class="text-gray-600">
+              In addition to selling new and used furniture, we also purchase old or unwanted office furniture.
+              Our services cover both sale and purchase, making us a one-stop solution for all office furniture needs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-20">
+      <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-up">About Us</h2>
+      <p class="text-lg text-gray-700 font-bold leading-relaxed text-center" data-aos="fade-up">
+        MIH Traders, founded by Md. Sajjad Hussain and Md. Ibrahim Hussain, is dedicated to providing
+        high-quality office furniture solutions in Hyderabad. We specialize in modern office workstations,
+        executive tables, ergonomic chairs, and conference furniture. Additionally, we also deal in scrap
+        furniture, ensuring sustainable and cost-effective solutions for businesses.
+      </p>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="location" class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="lg:text-center">
+        <h2 class="text-base text-emerald-700 font-semibold tracking-wide uppercase" data-aos="fade-up">Location</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-up">
+          Visit Our Showroom
+        </p>
+      </div>
+
+      <div class="mt-8 rounded-xl overflow-hidden shadow-xl" data-aos="zoom-in">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.207142383181!2d78.4704723157036!3d17.44850388804234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI2JzU0LjYiTiA3OMKwMjgnMjEuOSJF!5e0!3m2!1sen!2sin!4v1626789876543!5m2!1sen!2sin" 
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-20">
+      <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-up">Contact Us</h2>
+      <p class="text-center text-lg text-gray-700 mb-8" data-aos="fade-up">
+        Reach out to us for product inquiries, purchases, or furniture sales.
+      </p>
+      <div class="text-center space-y-5 font-bold text-gray-1200">
+        <p> Beside Blue Star Lodge, Darussalam Road, Nampally, Hyderabad – 500001, Telangana</p>
+        <p> 9000932678, 7989479554</p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">MIH Traders</h3>
+          <p class="text-black">
+            Premium office furniture solutions in Hyderabad. Quality products with exceptional service.
+          </p>
+          <div class="mt-4 flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i data-feather="facebook" class="h-6 w-6"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i data-feather="instagram" class="h-6 w-6"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i data-feather="twitter" class="h-6 w-6"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Contact Info</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i data-feather="map-pin" class="h-5 w-5 text-gray-400 mr-2"></i>
+              <span class="text-gray-400">Beside Blue Star Lodge, Nampally, Hyderabad</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="phone" class="h-5 w-5 text-gray-400 mr-2"></i>
+              <span class="text-gray-400">9000932678, 7989479554</span>
+            </li>
+            <li class="flex items-center">
+              <i data-feather="mail" class="h-5 w-5 text-gray-400 mr-2"></i>
+              <span class="text-gray-400"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-gray-800 pt-8">
+        <p class="text-gray-400 text-center">
+          &copy; 2023 MIH Traders. All rights reserved. Designed with ❤ in Hyderabad.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+    feather.replace();
+  </script>
+
+</body>
+</html>
